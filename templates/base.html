@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main | pannel</title>
+</head>
+<style>
+    body{
+        background-color: brown;
+    }
+    .navbar{
+        background-color: aqua;
+        overflow: hidden;
+    }
+    .navbar a{
+        display: block;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        padding: 16px 14px;
+        color: black;
+
+    }
+</style>
+<body>
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">USERS</a>
+        <a href="{%url 'adminlogin'%}">ADMINS</a>
+        <a href="{%url 'registercheck'%}">REGISTER</a>
+    </div>
+    <center><h1>This is the main page of our project</h1></center>
+</body>
+</html>
