@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Admin Login Form</h1>
+    <form action="{%url 'adminlogincheck'%}" method="post">
+        {%csrf_token%}
+        <label for="">username:</label>
+        <input type="text" name="username">
+        <br>
+        <br>
+        <label for="">password:</label>
+        <input type="password" name="password">
+        <br>
+        <br>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+
+    </form>
+    <br><br>
+
+    {%for i in messages%}
+    {{i}}
+    {%endfor%}
+</center>
+</body>
+</html>
